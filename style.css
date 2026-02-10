@@ -68,3 +68,27 @@ body {
 .about p {
     line-height: 1.5;
 }
+
+/*  Skills section */
+.skills {
+    border-top: 1px solid gray;
+    margin-top: 1rem;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.skills-list li {
+    padding: 0.5rem 0.75rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background: linear-gradient(180deg, #eef2ff, #e0e7ff);
+    color: navy;
+    border: 2px solid cyan;
+}
