@@ -1,12 +1,13 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 56rem;
-    margin: 4rem auto;
-    padding: 0 1rem;
-    background: #f2f3f5; 
+    margin: 0;
+    padding: 1rem;
+    background: #f2f3f5;
 }
 
 .page {
+    max-width: 56rem;
+    margin: 0 auto;
     background: white;
     padding: 2rem;
     border-radius: 2rem;
@@ -80,6 +81,7 @@ body {
     padding: 0;
     margin: 0.5rem;
     display: flex;
+    flex-wrap: wrap;
     gap: 0.75rem;
 }
 
@@ -206,4 +208,139 @@ body {
 
 .footer p {
     margin: 0;
+}
+
+/* ******* Mobile polish ******* */
+
+.nav a,
+.project-links a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.projects-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  margin-top: 1rem;
+  background: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 22px black;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-links a {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.9rem;
+  border: 1px solid cyan;
+  background: white;
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  background: cyan;
+  text-decoration: none;
+}
+
+/* ****** Responsive ***** */
+
+@media (max-width: 768px) {
+  body {
+    padding: 0.75rem;
+  }
+
+  .page {
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 10px 22px black;
+  }
+
+  .header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .profileImg {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+  .firstLastName {
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+
+  .nav {
+    width: 100%;
+    border-top: 1px solid cyan;
+    padding-top: 0.75rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .nav a {
+    display: block;
+    text-align: center;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.9rem;
+    border: 1px solid cyan;
+    background: white;
+    color: blue;
+    text-decoration: none;
+  }
+
+  .nav a:hover {
+    text-decoration: none;
+  }
+
+  .about, .skills, .projects, .education, .contact {
+    margin-top: 1.25rem;
+    padding-top: 0.75rem;
+  }
+
+  .project-summary,
+  .project-tech,
+  .project-features li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .page {
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .firstLastName {
+    font-size: 1.5rem;
+  }
+
+  .nav {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-list li {
+    font-size: 0.9rem;
+  }
 }
