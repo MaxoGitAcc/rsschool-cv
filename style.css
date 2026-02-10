@@ -138,3 +138,58 @@ body {
     font-size: 0.9rem;
     color: red;
 }
+
+/*  Education section */
+
+.education {
+    border-top: 1px solid gray;
+    margin-top: 1rem;
+}
+
+.edu-detail h3 {
+   font-size: 1rem;
+   font-weight: 600;
+   margin-bottom: 0.5rem;
+}
+
+.edu-detail .date {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-bottom: 1.25rem;
+}
+
+.edu-detail ul {
+    padding-left: 1.2rem;
+}
+
+.edu-detail li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+/*  Contact section */
+
+.contact {
+    border-top: 1px solid gray;
+    margin-top: 1rem;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-list li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-list a {
+    text-decoration: none;
+    color: blue;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
