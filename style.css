@@ -92,3 +92,49 @@ body {
     color: navy;
     border: 2px solid cyan;
 }
+
+/*  Projects section */
+
+.projects {
+    border-top: 1px solid gray;
+    margin-top: 1rem;
+}
+
+.project-summary {
+    font-size: 0.9rem;
+    color: #374151;
+}
+
+.project-tech {
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+.project-features {
+    margin: 0.5rem 0 0;
+    padding-left: 1rem;
+}
+
+.project-features li {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+}
+
+.project-links {
+    margin-top: 0.5rem;
+}
+
+.project-links a {
+    text-decoration: none;
+    color: blue;
+    font-weight: 500;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
+}
+
+.project-soon {
+    font-size: 0.9rem;
+    color: red;
+}
